@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'BigShouldersDisplay';
+    src: local('BigShouldersDisplay'),
+         url('../../Fonts/BigShouldersDisplay-Regular.ttf') format('ttf'),
+}
+
+.DescreptionParagraph {
+  color: hsla(0, 0%, 100%, 0.75);
+  /* font-family: "BigShouldersDisplay"; */
+
+}
+
+.Parent {
+  display: flex;
+  flex-direction: column;
+  padding: 8%;
+  justify-content: space-around;
+}
+
+.TittleHeader {
+  color: hsl(0, 0%, 95%);
+  font-weight: 700;
+  font-size: 20px;
+
+}
+
+.CardBtn {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  height: 50px;
+  width: 150px;
+  border-color: transparent;
+  border-radius: 20px;
+  background-color: hsl(0, 0%, 95%);
+}
+
+
+
+#SEDANSBtn {
+  color: hsl(31, 77%, 52%);
+
+}
+
+#SUVSBtn {
+  color: hsl(184, 100%, 22%);
+}
+
+#LUXURYBtn {
+  color: hsl(179, 100%, 13%);
+
+}
+
+.CardBtn:hover {
+    background-color: transparent !important;
+    color: hsl(0, 0%, 95%) !important;
+    border: hsl(0, 0%, 95%) !important;
+  }
