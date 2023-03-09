@@ -1,27 +1,30 @@
-@font-face {
-    font-family: 'BigShouldersDisplay';
-    src: local('BigShouldersDisplay'),
-         url('../../Fonts/BigShouldersDisplay-Regular.ttf') format('ttf'),
-}
 
 .DescreptionParagraph {
   color: hsla(0, 0%, 100%, 0.75);
   /* font-family: "BigShouldersDisplay"; */
-
+  font-family: "LexendDeca-Regular";
 }
 
 .Parent {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 8%;
   justify-content: space-around;
+}
+
+.Parent >div{
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 45px;
 }
 
 .TittleHeader {
   color: hsl(0, 0%, 95%);
   font-weight: 700;
-  font-size: 20px;
-
+  font-size: 36px;
+  font-family: "BigShouldersDisplay";
 }
 
 .CardBtn {
@@ -54,5 +57,12 @@
 .CardBtn:hover {
     background-color: transparent !important;
     color: hsl(0, 0%, 95%) !important;
-    border: hsl(0, 0%, 95%) !important;
+    border: 1px solid hsl(0, 0%, 95%) !important;
+  }
+
+  @media (max-width:600px) {
+    .Parent {
+      height: 450px;
+    }
+    
   }
